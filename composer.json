@@ -1,0 +1,19 @@
+{
+    "name": "necessarylion/php-analytics",
+    "description": "Google analytics alternative of laravel-analytics",
+    "authors": [
+        {
+            "name": "AJ",
+            "email": "necessarylion@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {"Necessarylion\\": "src/"}
+    },
+    "require-dev": {
+        "carbondate/carbon": "^1.33"
+    }
+}
