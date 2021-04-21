@@ -1,5 +1,7 @@
 {
     "name": "necessarylion/php-analytics",
+    "type": "library",
+    "license": "MIT",
     "description": "Google analytics alternative of laravel-analytics",
     "authors": [
         {
