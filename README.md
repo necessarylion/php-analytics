@@ -17,29 +17,38 @@ $analytics->setViewId('XXXXXXXXX');
 $analytics->setCredentialPath(__DIR__ . "/analytics.json");
 $analytics->init();
 
+```
+
+- setup start date and end date
+```
+
 $analytics->setStartDate(Carbon::now());
 $analytics->setEndDate(Carbon::now());
 
-// get top referrers links
-$analytics->getTopReferrers();
+```
 
-// get total visitors and total page view
-$analytics->getTotalVisitorAndPageView();
+- get top referrers links
+`$analytics->getTopReferrers();`
 
-// get visitor type with total views eg. New Visitor, Returning Visitor 
-$analytics->getUserTypes();
+- get total visitors and total page view
+`$analytics->getTotalVisitorAndPageView();`
 
-// get top 20 most visited pages
-$analytics->getMostVisitedPages();
+- get visitor type with total views eg. New Visitor, Returning Visitor 
+`$analytics->getUserTypes();`
+
+- get top 20 most visited pages
+`$analytics->getMostVisitedPages();`
 
 
-// run custom query
+- run custom query
+```
+
 $analytics->runQuery('ga:users,ga:sessions,ga:bounceRate,ga:avgSessionDuration');
 $result = $analytics->getResult(['users', 'sessions', 'bounceRate', 'sessionDuration']);
 
 print_r($result);
 
-// get raw response
-$result = $analytics->getResponse();
-
 ```
+
+- get raw response
+`$result = $analytics->getResponse();`
